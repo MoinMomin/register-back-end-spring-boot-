@@ -1,0 +1,28 @@
+<div class="container"appearance="fill">
+<h1>moin momin</h1>
+{{User | json}}
+<form (ngSubmit)="formSubmit()" method="POST">
+<mat-form-field appearance="fill"class="inp">
+    <mat-label>id</mat-label>
+    <input matInput name="id" [(ngModel)]="User.id">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill"class="inp">
+    <mat-label>Name</mat-label>
+    <input matInput name="name" [(ngModel)]="User.name">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill"class="inp">
+    <mat-label>Email</mat-label>
+    <input matInput name="email" [(ngModel)]="User.email">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill"class="inp">
+    <mat-label>Password</mat-label>
+    <input matInput name="pass" [(ngModel)]="User.pass">
+  </mat-form-field>
+
+  <button mat-flat-button color="primary">Submit</button>
+  <button mat-flat-button color="accent">Clear</button>
+  </form>
+</div>
